@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Big Bet Auto Bot",
+  "version": "1.0",
+  "description": "Auto betting bot based on custom X** table for Big only.",
+  "permissions": ["scripting", "tabs", "activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://zdj6.wingoanalyst.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
